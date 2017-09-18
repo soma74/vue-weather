@@ -59,7 +59,8 @@
         width: 600px;
     }
     #app > #infomation > #current-weather {
-        height: 200px;
+        margin-top: 70px;
+        height: 180px;
     }
     hr {
         width: 80%;
