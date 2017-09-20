@@ -4,8 +4,8 @@
             <li class="item" v-for="forecast in forecasts" :key="forecast.dt">
                 <div class="weekday">{{ convertToDate(forecast.dt) | weekday }}</div>
                 <div class="icon">
-                    <img :src="`http://openweathermap.org/img/w/${forecast.weather[0].icon}.png`" alt="">
-                    <!-- <img :src="'http://openweathermap.org/img/w/'+forecast.weather[0].icon+'.png'" alt=""> -->
+                    <img :src="`https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`" alt="">
+                    <!-- <img :src="'https://openweathermap.org/img/w/'+forecast.weather[0].icon+'.png'" alt=""> -->
                 </div>
                 <div class="temp">{{ (forecast.temp.day - 273.15).toFixed(0) }}℃</div>
             </li>
